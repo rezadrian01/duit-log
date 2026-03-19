@@ -10,7 +10,7 @@ export const CATEGORIES = [
   'Other'
 ] as const;
 
-export const METHODS = ['Cash', 'BCA Debit', 'QRIS'] as const;
+export const METHODS = ['Cash', 'BNI', 'Mandiri', 'BRI', 'GoPay', 'QRIS'] as const;
 
 export const SOURCES = ['Reza'] as const;
 // export const SOURCES = ['Danny', 'Dewi', 'Together'] as const;
