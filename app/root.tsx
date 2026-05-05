@@ -154,7 +154,7 @@ export default function App() {
             to="/"
             end
             className={({ isActive }) =>
-              `flex flex-col items-center gap-0.5 px-4 py-2 text-xs ${isActive ? 'font-bold text-slate-900' : 'text-slate-400'}`
+              `flex flex-col items-center gap-0.5 px-3 py-2 text-xs ${isActive ? 'font-bold text-slate-900' : 'text-slate-400'}`
             }
           >
             {({ isActive }) => (
@@ -180,7 +180,7 @@ export default function App() {
           <NavLink
             to="/history"
             className={({ isActive }) =>
-              `flex flex-col items-center gap-0.5 px-4 py-2 text-xs ${isActive ? 'font-bold text-slate-900' : 'text-slate-400'}`
+              `flex flex-col items-center gap-0.5 px-3 py-2 text-xs ${isActive ? 'font-bold text-slate-900' : 'text-slate-400'}`
             }
           >
             {({ isActive }) => (
@@ -199,6 +199,33 @@ export default function App() {
                   <polyline points="12 6 12 12 16 14" />
                 </svg>
                 <span>History</span>
+              </>
+            )}
+          </NavLink>
+          <NavLink
+            to="/analytics"
+            className={({ isActive }) =>
+              `flex flex-col items-center gap-0.5 px-3 py-2 text-xs ${isActive ? 'font-bold text-slate-900' : 'text-slate-400'}`
+            }
+          >
+            {({ isActive }) => (
+              <>
+                <svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth={isActive ? 2.5 : 2}
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <line x1="3" y1="3" x2="3" y2="20" />
+                  <line x1="21" y1="3" x2="21" y2="20" />
+                  <line x1="9" y1="20" x2="9" y2="10" />
+                  <line x1="15" y1="20" x2="15" y2="4" />
+                </svg>
+                <span>Stats</span>
               </>
             )}
           </NavLink>
